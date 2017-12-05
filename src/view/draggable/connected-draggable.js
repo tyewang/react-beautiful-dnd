@@ -148,7 +148,7 @@ export const makeSelector = (): Selector => {
 
         const { current, impact } = drag;
 
-        if (current.type !== type) {
+        if (current.type !== type && type !== 'ANY') {
           return defaultMapProps;
         }
 
